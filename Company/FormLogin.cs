@@ -41,7 +41,7 @@ namespace Company
         {
             
             nameUser = txtUser.Text;
-            MessageBox.Show(txtUser.Text);
+            MessageBox.Show(nameUser);
             this.Close();
         }
 

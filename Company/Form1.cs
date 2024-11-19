@@ -25,7 +25,7 @@ namespace Company
             User user = new User();
             try
             {
-                
+                user.name = f.nameUser;
                 
                 MessageBox.Show(f.nameUser);
             }

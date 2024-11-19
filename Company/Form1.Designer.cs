@@ -35,31 +35,33 @@
             this.toolStripSearch = new System.Windows.Forms.ToolStripComboBox();
             this.btnManager = new System.Windows.Forms.ToolStripSplitButton();
             this.btnManagerEmployee = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnManagerEmployeeReports = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnManagerEmployeesPasswords = new System.Windows.Forms.ToolStripMenuItem();
             this.btnManagerGoals = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnManagerGoalsSales = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnManagerGoalsDeliveries = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnManagerGoalsProd = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnManagerGoalsSallers = new System.Windows.Forms.ToolStripMenuItem();
             this.btnManagerProducts = new System.Windows.Forms.ToolStripMenuItem();
             this.btnManagerServices = new System.Windows.Forms.ToolStripMenuItem();
             this.btnManagerBackup = new System.Windows.Forms.ToolStripMenuItem();
             this.btnManagerInventory = new System.Windows.Forms.ToolStripMenuItem();
             this.btnManagerPurcharsing = new System.Windows.Forms.ToolStripMenuItem();
             this.btnManagerOrders = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnManagerMeetings = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnManagerEmployeeReports = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnManagerGoalsSales = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnManagerGoalsDeliveries = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnManagerGoalsProd = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnManagerGoalsSallers = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblUser = new System.Windows.Forms.ToolStripLabel();
             this.btnLogin = new System.Windows.Forms.ToolStripSplitButton();
             this.btnLoginPass = new System.Windows.Forms.ToolStripMenuItem();
             this.btnLoginSallerNumber = new System.Windows.Forms.ToolStripMenuItem();
             this.btnCostumers = new System.Windows.Forms.ToolStripSplitButton();
             this.btnCostumersAdd = new System.Windows.Forms.ToolStripMenuItem();
             this.btnCostumersEdit = new System.Windows.Forms.ToolStripMenuItem();
-            this.lblUser = new System.Windows.Forms.ToolStripLabel();
-            this.btnInventory = new System.Windows.Forms.ToolStripButton();
-            this.btnManagerMeetings = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnAppointments = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSplitButton1 = new System.Windows.Forms.ToolStripSplitButton();
+            this.inventoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.productsDetalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnManagerEmployeesPasswords = new System.Windows.Forms.ToolStripMenuItem();
+            this.createNewProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,8 +76,7 @@
             this.lblUser,
             this.btnLogin,
             this.btnCostumers,
-            this.btnInventory,
-            this.btnAppointments});
+            this.toolStripSplitButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(800, 25);
@@ -138,8 +139,20 @@
             this.btnManagerEmployeeReports,
             this.btnManagerEmployeesPasswords});
             this.btnManagerEmployee.Name = "btnManagerEmployee";
-            this.btnManagerEmployee.Size = new System.Drawing.Size(180, 22);
+            this.btnManagerEmployee.Size = new System.Drawing.Size(137, 22);
             this.btnManagerEmployee.Text = "Employees";
+            // 
+            // btnManagerEmployeeReports
+            // 
+            this.btnManagerEmployeeReports.Name = "btnManagerEmployeeReports";
+            this.btnManagerEmployeeReports.Size = new System.Drawing.Size(129, 22);
+            this.btnManagerEmployeeReports.Text = "Reports";
+            // 
+            // btnManagerEmployeesPasswords
+            // 
+            this.btnManagerEmployeesPasswords.Name = "btnManagerEmployeesPasswords";
+            this.btnManagerEmployeesPasswords.Size = new System.Drawing.Size(129, 22);
+            this.btnManagerEmployeesPasswords.Text = "Passwords";
             // 
             // btnManagerGoals
             // 
@@ -149,56 +162,8 @@
             this.btnManagerGoalsProd,
             this.btnManagerGoalsSallers});
             this.btnManagerGoals.Name = "btnManagerGoals";
-            this.btnManagerGoals.Size = new System.Drawing.Size(180, 22);
+            this.btnManagerGoals.Size = new System.Drawing.Size(137, 22);
             this.btnManagerGoals.Text = "Goals";
-            // 
-            // btnManagerProducts
-            // 
-            this.btnManagerProducts.Name = "btnManagerProducts";
-            this.btnManagerProducts.Size = new System.Drawing.Size(180, 22);
-            this.btnManagerProducts.Text = "Products";
-            // 
-            // btnManagerServices
-            // 
-            this.btnManagerServices.Name = "btnManagerServices";
-            this.btnManagerServices.Size = new System.Drawing.Size(180, 22);
-            this.btnManagerServices.Text = "Services";
-            // 
-            // btnManagerBackup
-            // 
-            this.btnManagerBackup.Name = "btnManagerBackup";
-            this.btnManagerBackup.Size = new System.Drawing.Size(180, 22);
-            this.btnManagerBackup.Text = "Backup";
-            // 
-            // btnManagerInventory
-            // 
-            this.btnManagerInventory.Name = "btnManagerInventory";
-            this.btnManagerInventory.Size = new System.Drawing.Size(180, 22);
-            this.btnManagerInventory.Text = "Inventory";
-            // 
-            // btnManagerPurcharsing
-            // 
-            this.btnManagerPurcharsing.Name = "btnManagerPurcharsing";
-            this.btnManagerPurcharsing.Size = new System.Drawing.Size(180, 22);
-            this.btnManagerPurcharsing.Text = "Purcharsing";
-            // 
-            // btnManagerOrders
-            // 
-            this.btnManagerOrders.Name = "btnManagerOrders";
-            this.btnManagerOrders.Size = new System.Drawing.Size(180, 22);
-            this.btnManagerOrders.Text = "Orders";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // btnManagerEmployeeReports
-            // 
-            this.btnManagerEmployeeReports.Name = "btnManagerEmployeeReports";
-            this.btnManagerEmployeeReports.Size = new System.Drawing.Size(180, 22);
-            this.btnManagerEmployeeReports.Text = "Reports";
             // 
             // btnManagerGoalsSales
             // 
@@ -224,6 +189,60 @@
             this.btnManagerGoalsSallers.Size = new System.Drawing.Size(189, 22);
             this.btnManagerGoalsSallers.Text = "Sallers";
             // 
+            // btnManagerProducts
+            // 
+            this.btnManagerProducts.Name = "btnManagerProducts";
+            this.btnManagerProducts.Size = new System.Drawing.Size(137, 22);
+            this.btnManagerProducts.Text = "Products";
+            // 
+            // btnManagerServices
+            // 
+            this.btnManagerServices.Name = "btnManagerServices";
+            this.btnManagerServices.Size = new System.Drawing.Size(137, 22);
+            this.btnManagerServices.Text = "Services";
+            // 
+            // btnManagerBackup
+            // 
+            this.btnManagerBackup.Name = "btnManagerBackup";
+            this.btnManagerBackup.Size = new System.Drawing.Size(137, 22);
+            this.btnManagerBackup.Text = "Backup";
+            // 
+            // btnManagerInventory
+            // 
+            this.btnManagerInventory.Name = "btnManagerInventory";
+            this.btnManagerInventory.Size = new System.Drawing.Size(137, 22);
+            this.btnManagerInventory.Text = "Inventory";
+            // 
+            // btnManagerPurcharsing
+            // 
+            this.btnManagerPurcharsing.Name = "btnManagerPurcharsing";
+            this.btnManagerPurcharsing.Size = new System.Drawing.Size(137, 22);
+            this.btnManagerPurcharsing.Text = "Purcharsing";
+            // 
+            // btnManagerOrders
+            // 
+            this.btnManagerOrders.Name = "btnManagerOrders";
+            this.btnManagerOrders.Size = new System.Drawing.Size(137, 22);
+            this.btnManagerOrders.Text = "Orders";
+            // 
+            // btnManagerMeetings
+            // 
+            this.btnManagerMeetings.Name = "btnManagerMeetings";
+            this.btnManagerMeetings.Size = new System.Drawing.Size(137, 22);
+            this.btnManagerMeetings.Text = "Meetings";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // lblUser
+            // 
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(83, 22);
+            this.lblUser.Text = "Welcome User";
+            // 
             // btnLogin
             // 
             this.btnLogin.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
@@ -239,13 +258,13 @@
             // btnLoginPass
             // 
             this.btnLoginPass.Name = "btnLoginPass";
-            this.btnLoginPass.Size = new System.Drawing.Size(180, 22);
+            this.btnLoginPass.Size = new System.Drawing.Size(149, 22);
             this.btnLoginPass.Text = "Password";
             // 
             // btnLoginSallerNumber
             // 
             this.btnLoginSallerNumber.Name = "btnLoginSallerNumber";
-            this.btnLoginSallerNumber.Size = new System.Drawing.Size(180, 22);
+            this.btnLoginSallerNumber.Size = new System.Drawing.Size(149, 22);
             this.btnLoginSallerNumber.Text = "Saller Number";
             // 
             // btnCostumers
@@ -272,35 +291,31 @@
             this.btnCostumersEdit.Size = new System.Drawing.Size(185, 22);
             this.btnCostumersEdit.Text = "Edit a Custumer";
             // 
-            // lblUser
+            // toolStripSplitButton1
             // 
-            this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(83, 22);
-            this.lblUser.Text = "Welcome User";
+            this.toolStripSplitButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripSplitButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inventoryToolStripMenuItem,
+            this.productsDetalesToolStripMenuItem,
+            this.createNewProductToolStripMenuItem});
+            this.toolStripSplitButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripSplitButton1.Image")));
+            this.toolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripSplitButton1.Name = "toolStripSplitButton1";
+            this.toolStripSplitButton1.Size = new System.Drawing.Size(70, 22);
+            this.toolStripSplitButton1.Text = "Products";
             // 
-            // btnInventory
+            // inventoryToolStripMenuItem
             // 
-            this.btnInventory.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnInventory.Image = ((System.Drawing.Image)(resources.GetObject("btnInventory.Image")));
-            this.btnInventory.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnInventory.Name = "btnInventory";
-            this.btnInventory.Size = new System.Drawing.Size(61, 22);
-            this.btnInventory.Text = "Inventory";
+            this.inventoryToolStripMenuItem.Name = "inventoryToolStripMenuItem";
+            this.inventoryToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.inventoryToolStripMenuItem.Text = "Inventory";
             // 
-            // btnManagerMeetings
+            // productsDetalesToolStripMenuItem
             // 
-            this.btnManagerMeetings.Name = "btnManagerMeetings";
-            this.btnManagerMeetings.Size = new System.Drawing.Size(180, 22);
-            this.btnManagerMeetings.Text = "Meetings";
-            // 
-            // btnAppointments
-            // 
-            this.btnAppointments.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnAppointments.Image = ((System.Drawing.Image)(resources.GetObject("btnAppointments.Image")));
-            this.btnAppointments.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnAppointments.Name = "btnAppointments";
-            this.btnAppointments.Size = new System.Drawing.Size(87, 22);
-            this.btnAppointments.Text = "Appointments";
+            this.productsDetalesToolStripMenuItem.Name = "productsDetalesToolStripMenuItem";
+            this.productsDetalesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.productsDetalesToolStripMenuItem.Text = "Products Details";
+            this.productsDetalesToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
             // 
             // button1
             // 
@@ -312,11 +327,11 @@
             this.button1.Text = "Sell";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // btnManagerEmployeesPasswords
+            // createNewProductToolStripMenuItem
             // 
-            this.btnManagerEmployeesPasswords.Name = "btnManagerEmployeesPasswords";
-            this.btnManagerEmployeesPasswords.Size = new System.Drawing.Size(180, 22);
-            this.btnManagerEmployeesPasswords.Text = "Passwords";
+            this.createNewProductToolStripMenuItem.Name = "createNewProductToolStripMenuItem";
+            this.createNewProductToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.createNewProductToolStripMenuItem.Text = "Create New Product";
             // 
             // Form1
             // 
@@ -363,10 +378,12 @@
         private System.Windows.Forms.ToolStripSplitButton btnCostumers;
         private System.Windows.Forms.ToolStripMenuItem btnCostumersAdd;
         private System.Windows.Forms.ToolStripMenuItem btnCostumersEdit;
-        private System.Windows.Forms.ToolStripButton btnInventory;
-        private System.Windows.Forms.ToolStripButton btnAppointments;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolStripMenuItem btnManagerEmployeesPasswords;
+        private System.Windows.Forms.ToolStripSplitButton toolStripSplitButton1;
+        private System.Windows.Forms.ToolStripMenuItem inventoryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem productsDetalesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem createNewProductToolStripMenuItem;
     }
 }
 
