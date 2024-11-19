@@ -1,5 +1,4 @@
-﻿using MySql.Data.MySqlClient;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,53 +33,16 @@ namespace Company
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            this.Close();
             Application.Exit();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string strconn = "server=localhost; User id=root;password=;database=company";
-            MySqlConnection conn = new MySqlConnection(strconn);
-            try
-            {
-
-                string name = txtUser.Text;
-                string pass = txtPass.Text;
-                CriptoMD5 md5 = new CriptoMD5();
-                name = md5.RetornarMD5(name);
-                pass = md5.RetornarMD5(pass);
-
-                string select = $"SELECT `user_type`,`user_id`, `user_name` FROM `users` WHERE `user_name` LIKE '{name}' AND `user_pass` LIKE '{pass}'"; 
-
-                MySqlCommand cmd = new MySqlCommand(select,conn);
-                conn.Open();
-                MySqlDataReader reader = cmd.ExecuteReader();
-
-                if (reader.HasRows)
-                {
-                    while (reader.Read())
-                    {
-                        
-
-                        reader["user_id"].ToString();
-
-                        
-                        idUser =  (int)reader["user_type"];
-                        nameUser = reader["user_name"].ToString();
-                        
-                        this.Close();
-                        return;
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Check your User Name Or Password!","Error");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            
+            nameUser = txtUser.Text;
+            MessageBox.Show(txtUser.Text);
+            this.Close();
         }
 
         private void txtUser_TextChanged(object sender, EventArgs e)

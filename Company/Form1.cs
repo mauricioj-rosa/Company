@@ -25,8 +25,9 @@ namespace Company
             User user = new User();
             try
             {
-                user.id = f.idUser;
-                user.name = f.nameUser;
+                
+                
+                MessageBox.Show(f.nameUser);
             }
             catch (Exception ex)
             {
@@ -34,7 +35,7 @@ namespace Company
             }
             finally
             {
-                user.IdType();
+                
                 lblUser.Text = $"Welcome {user.name}";
                 this.WindowState = FormWindowState.Maximized;
             }
