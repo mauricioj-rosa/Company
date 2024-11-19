@@ -40,5 +40,11 @@ namespace Company
                 this.WindowState = FormWindowState.Maximized;
             }
         }
+
+        private void createNewProductToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 f = new Form2();
+            f.ShowDialog();
+        }
     }
 }
