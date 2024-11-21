@@ -46,5 +46,11 @@ namespace Company
             Form2 f = new Form2();
             f.ShowDialog();
         }
+
+        private void inventoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            inventory_products f = new inventory_products();
+            f.ShowDialog();
+        }
     }
 }
