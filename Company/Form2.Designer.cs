@@ -64,6 +64,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Add Product";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -101,17 +102,17 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(31, 108);
+            this.label3.Location = new System.Drawing.Point(23, 108);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 24);
+            this.label3.Size = new System.Drawing.Size(93, 24);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Price:";
+            this.label3.Text = "Price(R$):";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(711, 106);
+            this.label4.Location = new System.Drawing.Point(707, 108);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(74, 24);
             this.label4.TabIndex = 6;
@@ -121,11 +122,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(412, 108);
+            this.label5.Location = new System.Drawing.Point(379, 108);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 24);
+            this.label5.Size = new System.Drawing.Size(115, 24);
             this.label5.TabIndex = 7;
-            this.label5.Text = "Size:";
+            this.label5.Text = "Size(metter):";
             // 
             // label6
             // 
@@ -166,26 +167,29 @@
             // txt_weight
             // 
             this.txt_weight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_weight.Location = new System.Drawing.Point(791, 106);
+            this.txt_weight.Location = new System.Drawing.Point(787, 108);
             this.txt_weight.Name = "txt_weight";
             this.txt_weight.Size = new System.Drawing.Size(124, 26);
             this.txt_weight.TabIndex = 14;
+            this.txt_weight.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_weight_KeyPress);
             // 
             // txt_price
             // 
             this.txt_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_price.Location = new System.Drawing.Point(95, 108);
+            this.txt_price.Location = new System.Drawing.Point(122, 108);
             this.txt_price.Name = "txt_price";
             this.txt_price.Size = new System.Drawing.Size(124, 26);
             this.txt_price.TabIndex = 15;
+            this.txt_price.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_price_KeyPress);
             // 
             // txt_size
             // 
             this.txt_size.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_size.Location = new System.Drawing.Point(469, 106);
+            this.txt_size.Location = new System.Drawing.Point(524, 108);
             this.txt_size.Name = "txt_size";
             this.txt_size.Size = new System.Drawing.Size(124, 26);
             this.txt_size.TabIndex = 16;
+            this.txt_size.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_size_KeyPress);
             // 
             // Form2
             // 
