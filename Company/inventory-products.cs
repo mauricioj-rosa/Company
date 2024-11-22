@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Company
 {
@@ -19,8 +20,35 @@ namespace Company
 
         private void inventory_products_Load(object sender, EventArgs e)
         {
+            string con = "Data Source = DESKTOP-NKVT3VV\\SQLEXPRESS;Initial Catalog=Company;Integrated Security=true";
+            SqlConnection conn = new SqlConnection(con);
+            try
+            {
+                conn.Open();
+                var sql_select = "select name_prod, amount_prod, price_prod from products;";
+                using (SqlDataAdapter da = new SqlDataAdapter(sql_select, con))
+                {
+                    using (DataTable dt = new DataTable())
+                    {
+                        da.Fill(dt);
+                        dataGridView1.DataSource = dt;
+                    }
 
-            listBox1.
+                }
+                
+                MessageBox.Show("Ok");
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
+
+        
     }
 }
