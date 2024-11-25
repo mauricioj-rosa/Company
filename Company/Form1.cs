@@ -52,5 +52,11 @@ namespace Company
             inventory_products f = new inventory_products();
             f.ShowDialog();
         }
+
+        private void productsDetalesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProductDetailsForm f = new ProductDetailsForm();
+            f.ShowDialog();
+        }
     }
 }

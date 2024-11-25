@@ -25,7 +25,7 @@ namespace Company
             try
             {
                 conn.Open();
-                var sql_select = "select name_prod, amount_prod, price_prod from products;";
+                var sql_select = "select id_prod as id,name_prod as nome, amount_prod as estoque, price_prod as preço from products;";
                 using (SqlDataAdapter da = new SqlDataAdapter(sql_select, con))
                 {
                     using (DataTable dt = new DataTable())
