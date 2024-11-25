@@ -52,7 +52,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 0;
-            this.dateTimePicker1.Value = new System.DateTime(2024, 11, 19, 0, 0, 0, 0);
+            this.dateTimePicker1.Value = new System.DateTime(2024, 11, 25, 17, 54, 2, 0);
             this.dateTimePicker1.Visible = false;
             // 
             // button1

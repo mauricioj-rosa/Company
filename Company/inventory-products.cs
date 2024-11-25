@@ -25,7 +25,7 @@ namespace Company
             try
             {
                 conn.Open();
-                var sql_select = "select id_prod as id,name_prod as nome, amount_prod as estoque, price_prod as preço from products;";
+                var sql_select = "select id_prod as id,name_prod as nome, amount_prod as estoque, price_prod as preço, details_prod as details from products;";
                 using (SqlDataAdapter da = new SqlDataAdapter(sql_select, con))
                 {
                     using (DataTable dt = new DataTable())
@@ -49,6 +49,12 @@ namespace Company
             }
         }
 
-        
+        private void trackBar1_ValueChanged(object sender, EventArgs e)
+        {
+            
+            
+            lbl_preco.Text = $"Valor entre {trackBar1.Value.ToString() +",00"} - {trackBar2.Value.ToString()+"0,00"}";
+
+        }
     }
 }

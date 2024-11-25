@@ -38,7 +38,7 @@ namespace Company
             {
                 con.Open();
                 MessageBox.Show("Connected");
-
+                dateTimePicker1.Value = DateTime.Now;
                 
             }
             catch (Exception ex)
