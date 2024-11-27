@@ -30,12 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripSearch = new System.Windows.Forms.ToolStripComboBox();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.lblUser = new System.Windows.Forms.ToolStripLabel();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.ToolStripButton();
             this.btnSearch = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSearch = new System.Windows.Forms.ToolStripComboBox();
             this.btnManager = new System.Windows.Forms.ToolStripSplitButton();
             this.btnManagerEmployee = new System.Windows.Forms.ToolStripMenuItem();
             this.btnManagerEmployeeReports = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,6 +49,8 @@
             this.btnManagerPurcharsing = new System.Windows.Forms.ToolStripMenuItem();
             this.btnManagerOrders = new System.Windows.Forms.ToolStripMenuItem();
             this.btnManagerMeetings = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.lblUser = new System.Windows.Forms.ToolStripLabel();
             this.btnLogin = new System.Windows.Forms.ToolStripSplitButton();
             this.btnLoginPass = new System.Windows.Forms.ToolStripMenuItem();
             this.btnLoginSallerNumber = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,6 +61,7 @@
             this.inventoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productsDetalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.createNewProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,34 +82,6 @@
             this.toolStrip1.Size = new System.Drawing.Size(800, 25);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // toolStripSearch
-            // 
-            this.toolStripSearch.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripSearch.Name = "toolStripSearch";
-            this.toolStripSearch.Size = new System.Drawing.Size(121, 25);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // lblUser
-            // 
-            this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(83, 22);
-            this.lblUser.Text = "Welcome User";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(58, 104);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 85);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Sell";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // btnLogout
             // 
@@ -132,6 +104,12 @@
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(23, 22);
             this.btnSearch.Text = "toolStripButton2";
+            // 
+            // toolStripSearch
+            // 
+            this.toolStripSearch.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripSearch.Name = "toolStripSearch";
+            this.toolStripSearch.Size = new System.Drawing.Size(121, 25);
             // 
             // btnManager
             // 
@@ -253,6 +231,18 @@
             this.btnManagerMeetings.Size = new System.Drawing.Size(137, 22);
             this.btnManagerMeetings.Text = "Meetings";
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // lblUser
+            // 
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(83, 22);
+            this.lblUser.Text = "Welcome User";
+            // 
             // btnLogin
             // 
             this.btnLogin.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
@@ -299,7 +289,7 @@
             // 
             this.btnCostumersEdit.Name = "btnCostumersEdit";
             this.btnCostumersEdit.Size = new System.Drawing.Size(185, 22);
-            this.btnCostumersEdit.Text = "Edit a Custumer";
+            this.btnCostumersEdit.Text = "Custumers";
             // 
             // toolStripSplitButton1
             // 
@@ -325,7 +315,7 @@
             // 
             this.productsDetalesToolStripMenuItem.Name = "productsDetalesToolStripMenuItem";
             this.productsDetalesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.productsDetalesToolStripMenuItem.Text = "Products Details";
+            this.productsDetalesToolStripMenuItem.Text = "Products Seles";
             this.productsDetalesToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
             this.productsDetalesToolStripMenuItem.Click += new System.EventHandler(this.productsDetalesToolStripMenuItem_Click);
             // 
@@ -335,6 +325,16 @@
             this.createNewProductToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.createNewProductToolStripMenuItem.Text = "Create New Product";
             this.createNewProductToolStripMenuItem.Click += new System.EventHandler(this.createNewProductToolStripMenuItem_Click);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(58, 104);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(161, 85);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Sell";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
